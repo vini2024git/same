@@ -1,0 +1,60 @@
+.header {
+    padding:20px; 
+    text-align: center;
+    color: hsl(293, 44%, 96%); 
+  }
+  .navbar {
+    overflow: hidden; 
+    background-color: hsl(230, 71%, 13%); 
+    gap: 3px;
+    display: flex;
+    justify-content:space-between;
+  }
+  .right{
+    color: rgb(247, 243, 243);
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .top{
+    float: left;
+    display: block; 
+    color: rgb(239, 236, 236); 
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration: none; 
+    display: flex;
+    gap : 90px;
+  }
+  .navbar a.left {
+    float: right;
+      }
+  .navbar a:hover {
+    background-color: hwb(311 50% 5%); 
+    color: rgba(236, 233, 233, 0.905);
+  }
+  .container {
+    position: relative;
+  }
+  
+  
+  .text-block {
+    position: absolute;
+    bottom: 400px;
+    left: 80px;
+    font-weight: 500;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.rit{
+  text-align: right;
+  font-size: 40px;
+  font-weight: 200;
+  font-style: italic;
+  color: rgb(247, 247, 249);
+  margin-top: -292px;
+}
+.container{
+  margin-top: -449px;
+}

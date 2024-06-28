@@ -1,0 +1,67 @@
+<app-header></app-header>
+ <app-projects></app-projects>  
+ <app-footer></app-footer>          
+
+
+ <div *ngFor="let student of students">
+    <p> {{student.name}} - {{student.class}}  </p>
+    <button (click)="onDelete(this.student.id)">{{student.id}}</button>
+   
+ </div> 
+ <div *ngFor="let user of students">
+  <p> {{user.name}} - {{user.class}}  </p>
+  <button (click)="onDelete(this.user.id)">{{user.id}}</button>
+ 
+</div> 
+
+ <!-- <form #studentForm="ngForm" (ngSubmit)="sendStudentData(studentForm)" >
+   <label> Id </label>
+   <input type="text" id="id" name="id" placeholder="Enter your Id" ngModel #id="ngModel" [(ngModel)]="this.studentService.formData.id">
+   <label> Name </label>
+   <input type="text" id="name" name="name" placeholder="Enter your Name" ngModel #name="ngModel" [(ngModel)]="this.studentService.formData.name">
+   <label> Class </label>
+   <input type="text" id="class" name="class" placeholder="Enter your Class" ngModel #class="ngModel" [(ngModel)]="this.studentService.formData.class">
+   <label> Section </label>
+   <input type="text" id="section" name="section" placeholder="Enter your Section" ngModel #section="ngModel" [(ngModel)]="this.studentService.formData.section">
+   <label> School Name </label>
+   <input type="text" id="schoolName" name="schoolName" placeholder="Enter your School Name" ngModel #schoolName="ngModel" [(ngModel)]="this.studentService.formData.schoolName">
+   <label> Place </label>
+   <input type="text" id="place" name="place" placeholder="Enter your Place" ngModel #place="ngModel" [(ngModel)]="this.studentService.formData.place">
+   <button type="submit">Submit</button>
+</form> -->
+
+<form #userForm="ngForm" (ngSubmit)="senduserData(userForm)" >
+  <label> Id </label>
+  <input type="text" id="id" name="id" placeholder="Enter your Id" ngModel #id="ngModel" [(ngModel)]="this.userservice.formData.id">
+  <label> Name </label>
+  <input type="text" id="name" name="name" placeholder="Enter your Name" ngModel #name="ngModel" [(ngModel)]="this.userservice.formData.name">
+  <label> email </label>
+  <input type="text" id="email" name="email" placeholder="Enter your email" ngModel #email="ngModel" [(ngModel)]="this.userservice.formData.email">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+   Update values
+ </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
